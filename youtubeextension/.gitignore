@@ -1,0 +1,20 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folder
+venv/
+
+# Ignore environment variables (secrets)
+.env
+
+# Ignore system/IDE specific files
+.DS_Store
+*.swp
+*.swo
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Ignore logs
+*.log
