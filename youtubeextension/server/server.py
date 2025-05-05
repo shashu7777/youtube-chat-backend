@@ -23,11 +23,11 @@ def query():
     video_id = data.get("videoId")
 
     try:
-      # proxies = {
-      #  'http': 'http://47.251.122.81:8888',
-      #  'https': 'http://47.251.122.81:8888'
-      # }
-      transcript_list=YouTubeTranscriptApi.get_transcript(video_id=video_id,languages=['en','hi'])
+      proxies = {
+       'http': 'http://159.203.61.169:3128',
+       'https': 'http://159.203.61.169:3128'
+      }
+      transcript_list=YouTubeTranscriptApi.get_transcript(video_id=video_id,languages=['en','hi'], proxies=proxies)
       transcript=""
       for chunk in transcript_list:
           transcript=transcript+chunk['text']
