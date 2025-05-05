@@ -24,8 +24,8 @@ def query():
 
     try:
       proxies = {
-       'http': 'http://52.6.224.162:80',
-       'https': 'http://52.6.224.162:80'
+       'http': 'http://88.99.209.189:1234',
+       'https': 'http://88.99.209.189:1234'
       }
       transcript_list=YouTubeTranscriptApi.get_transcript(video_id=video_id,languages=['en','hi'],proxies=proxies)
       transcript=""
